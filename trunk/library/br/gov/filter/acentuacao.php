@@ -5,8 +5,8 @@
  * @category   
  * @package    
  * @subpackage 
- * @copyright  Copyright (c) 2011 PHP.Gov-BR (http://code.google.com/p/php-gov-br/)
- * @autor      PHP.Gov-BR Team <php.gov.br@google.com>
+ * @copyright  Copyright (c) 2011 php.Gov-BR (http://code.google.com/p/php-gov-br/)
+ * @autor      Ricardo Maia <ricardo.maia@infusesoftware.com>
  * @version    $Id:$
  * @uses       Zend_Filter_Interface
  * @todo 
