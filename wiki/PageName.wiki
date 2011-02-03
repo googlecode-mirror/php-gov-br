@@ -1,9 +1,0 @@
-#summary One-sentence summary of this page.
-
-= Introdução =
-
-Bibliotecas PHP escritas no padrão Zend Framework 1.x para uso em aplicações web segundo os padrões do Governo Brasileiro.
-
-  * e-GOV
-  * e-PING
-  * e-MAG
