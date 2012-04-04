@@ -1,14 +1,22 @@
+<pre>
 <?php
-$currentDirectory = dirname(realpath(__FILE__));
-set_include_path(get_include_path() . PATH_SEPARATOR . $currentDirectory . DIRECTORY_SEPARATOR. '..'. DIRECTORY_SEPARATOR .'library');
+use \Br\Gov\Filter\Acentuacao;
 
-include_once 'Zend/Loader/Autoloader.php';
-$autoloader = Zend_Loader_Autoloader::getInstance();
-$autoloader->registerNamespace('br');
+define('DS',DIRECTORY_SEPARATOR);
+define('PS',PATH_SEPARATOR);
 
-use br\gov\filter as f;
-$a = new f\Acentuacao();
+set_include_path ( get_include_path() . PS .
+		'/home/brainfork/zend-framework/zf2/library' );
+
+require_once 'Zend'. DS .'Loader'. DS .'StandardAutoloader.php';
+$autoloader = new Zend\Loader\StandardAutoloader();
+$autoloader->register();
+
+$autoloader->registerNamespace('Br',   __DIR__ . DS . '../library' . DS . 'Br');
+
+$a = new Acentuacao();
 
 $f = $a->filter('Cinqüênta pássaros se vão e caçoam da àguia. Pão-de-ló e café!');
 
-Zend_Debug::dump($f);
+Zend\Debug::dump($f);
+

@@ -7,12 +7,12 @@
  * @subpackage 
  * @copyright  Copyright (c) 2011 php.Gov-BR (http://code.google.com/p/php-gov-br/)
  * @autor      Ricardo Maia <ricardo.maia@infusesoftware.com>
- * @version    $Id:$
+ * @version    $Id$
  * @uses       Zend_Filter_Interface
  * @todo 
  */
-namespace br\gov\filter;
-class Acentuacao implements \Zend_Filter_Interface
+namespace Br\Gov\Filter;
+class Acentuacao implements \Zend\Filter\Filter
 {
     public function filter($value)
     {
