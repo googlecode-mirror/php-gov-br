@@ -8,7 +8,7 @@
  * @copyright  Copyright (c) 2011 php.Gov-BR (http://code.google.com/p/php-gov-br/)
  * @autor      Ricardo Maia <ricardo.maia@infusesoftware.com>
  * @version    $Id$
- * @uses       Zend_Filter_Interface
+ * @uses       Zend\Filter\Filter
  * @todo 
  */
 namespace Br\Gov\Filter;
